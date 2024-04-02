@@ -14,12 +14,14 @@
     background: green;
     width: 10%;
     border: 2px solid lightgrey;
+    width: auto;
 }
 .navbar{
     background: green;
     width: 10%;
     justify-content: flex-end;
     border: 2px solid lightgrey;
+    width: auto;
 }
 
 .logo, .navbar{
@@ -27,15 +29,20 @@
     margin: 15px;
     display: flex;
 }
+.bigcontainer {
+   display: flex;
+ flex-wrap: wrap;
+}
 
 .splash{
     background: grey;
-    height: 45vh;
+    height: 50vh;
     margin: 5px;
     border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 .tilbudcontainer{
     background: grey;
@@ -45,6 +52,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    flex-grow: 1;
 }
 .tilbud1{
     background: green;
@@ -55,6 +64,7 @@
     align-items: center;
     justify-content: center;
     border: 2px solid lightgrey;
+    order: 1;
 }
 .tilbud2{
     background: green;
@@ -65,6 +75,7 @@
     align-items: center;
     justify-content: center;
     border: 2px solid lightgrey;
+    order: 2;
 }
 .tilbud3{
     background: green;
@@ -75,6 +86,7 @@
     align-items: center;
     justify-content: center;
     border: 2px solid lightgrey;
+    order: 3;
 }
 
 .tilbud1, .tilbud2, .tilbud3{
@@ -89,14 +101,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1; /* Allow the tilbudcontainer div to grow */
 }
 
 footer{
     background: grey;
     height: 5vh;
-    margin: 5px;
+    margin: auto;
     border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+
+
+@media screen and (min-width:1280px ) {
+    .navbar{
+        width: 700px;
+        justify-content: center;
+    }
+
+    .proces{
+        order: -1;
+    }
+
+    .tilbud1{
+        order: 3;
+    }
+    .tilbud2{
+        order: 2;
+    }
+    .tilbud3{
+        order: 1;
+    }
+    footer{
+        background: grey;
+        height: 10vh;
+        margin: 50px 5px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
 }
