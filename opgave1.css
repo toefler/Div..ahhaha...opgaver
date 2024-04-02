@@ -101,7 +101,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1; /* Allow the tilbudcontainer div to grow */
+    flex-grow: 1; 
 }
 
 footer{
