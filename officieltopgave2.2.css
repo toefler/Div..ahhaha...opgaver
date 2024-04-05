@@ -139,15 +139,13 @@ body {
     .billed6 {
         grid-area: billed6; 
     }
-.billedcontain{
 
-}
     .errything {
         display: grid;
         grid-template-columns: auto 2fr;
         grid-template-areas: 
           
-            "bigbilled billedcontain"
+            "bigbilled billed1"
             ;
     }
 }

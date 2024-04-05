@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    background: #ddd;
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    grid-gap: 5px;
+    margin: 10px;
+    border: 2px solid black;
+    grid-area: topbar;
+}
+
+.logo {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.nav {
+    padding: 5px;
+    margin: 5px;
+    justify-self: end;
+    border: 2px solid black;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.errything{
+   
+    padding: 15px;
+    margin: 15px auto;
+    display: grid;
+    gap: 15px;
+    /* et . giver et tomt felt med blank space */
+    grid-template-areas:
+        "img1 img1 img1 img1"
+        "img2 img2 img3 img3"
+        "img4 img4 img5 img5"
+        "img6 img6 img7 img7"
+}
+.grid-items{
+    border: solid black 1px;
+    background: #ddd;
+    padding: 15px;
+    color: black;
+    font-size: 2em;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.big{
+    grid-area: img1;
+}
+.one{
+    grid-area: img2;
+}
+.two{
+    grid-area: img3;
+}
+.three{
+    grid-area: img4;
+}
+.four{
+    grid-area: img5;
+}
+.five{
+    grid-area: img6;
+}
+.six{
+    grid-area: img7;
+}
+.footer {
+    background: #ddd;
+    height: 5vh;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+@media screen and (min-width: 1024px) {
+    .errything{
+       
+        padding: 15px;
+        margin: 15px auto;
+        display: grid;
+        gap: 15px;
+        /* et . giver et tomt felt med blank space */
+        grid-template-areas:
+            "logo   .  nav"
+            "img1 img1 img1"
+            "img2 img3 img4"
+            "img5 img6 img7"
+            "footer footer footer";
+    }
+}
+@media screen and (min-width: 1440px) {
+    .errything{
+        
+        padding: 15px;
+        margin: 15px auto;
+        display: grid;
+        gap: 15px;
+        grid-row-gap: 3rem;
+
+        /* et . giver et tomt felt med blank space */
+        grid-template-areas:
+            "logo . nav nav"
+            "img1 img1 img1 ."
+            "img1 img1 img1 img2"
+            "img3 img4 img4 img4"
+            ". img4 img4 img4"
+            "img5 img6 img7 img7"
+            "footer footer footer footer";
+    }
+    .nav {
+        width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+}
