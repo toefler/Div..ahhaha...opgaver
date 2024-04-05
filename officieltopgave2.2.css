@@ -147,7 +147,7 @@ body {
         grid-template-columns: auto 2fr;
         grid-template-areas: 
           
-            "bigbilled billed1"
+            "bigbilled billedcontain"
             ;
     }
 }
