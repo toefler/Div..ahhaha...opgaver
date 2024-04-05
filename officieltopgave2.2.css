@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.errything {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "topbar"
+        "bigbilled"
+        "billedcontain"
+        "footer";
+}
+
+.topbar {
+    background: #ddd;
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    grid-gap: 5px;
+    margin: 10px;
+    border: 2px solid black;
+    grid-area: topbar;
+}
+
+.logo {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.nav {
+    padding: 5px;
+    margin: 5px;
+    justify-self: end;
+    border: 2px solid black;
+}
+
+.bigbilled {
+    background: #ddd;
+    margin: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
+    height: 450px;
+    grid-area: bigbilled;
+}
+
+.bigbilled img {
+    height: 350px; 
+    width: 100%;
+}
+
+.billedcontain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
+    height: 800px;
+    grid-area: billedcontain;
+}
+
+.billed, .billed1, .billed2, .billed3, .billed4, .billed5, .billed6 {
+    background-color: #ddd;
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background: #ddd;
+    height: 5vh;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+
+@media screen and (min-width: 1024px) {
+    .bigbilled {
+        background: #ddd;
+        margin: 10px;
+        border: 2px solid black;
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; 
+        height: 600px;
+    }
+
+    .bigbilled img {
+        height: 550px; 
+        width: 100%;
+    }
+
+    .billedcontain {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 10px;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nav {
+        width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .billed1 {
+        grid-area: billed1;
+    }
+
+    .billed2 {
+        grid-area: billed2;
+    }
+
+    .billed3 {
+        grid-area: billed3;
+    }
+
+    .billed4 {
+        grid-area: billed4;
+    }
+
+    .billed5 {
+        grid-area: billed5;
+    }
+
+    .billed6 {
+        grid-area: billed6; 
+    }
+.billedcontain{
+
+}
+    .errything {
+        display: grid;
+        grid-template-columns: auto 2fr;
+        grid-template-areas: 
+          
+            "bigbilled billed1"
+            ;
+    }
+}

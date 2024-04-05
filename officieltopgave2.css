@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.errything{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.topbar {
+    background: #ddd;
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    grid-gap: 5px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.logo {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.nav {
+    padding: 5px;
+    margin: 5px;
+    justify-self: end;
+    border: 2px solid black;
+}
+
+.bigbilled {
+    background: #ddd;
+    margin: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
+    height: 450px;
+   
+}
+
+.bigbilled img{
+    height: 350px; 
+    width: 100%
+    
+}
+.billedcontain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
+    height: 800px;
+}
+.billed ,.billed1 ,.billed2 ,.billed3, .billed4, .billed5, .billed6{
+    background-color: #ddd;
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    background: #ddd;
+    height: 5vh;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (min-width: 1024px ) {
+    .bigbilled {
+        background: #ddd;
+        margin: 10px;
+        border: 2px solid black;
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto; 
+        height: 600px;
+    }
+    .bigbilled img{
+        height: 550px; 
+        width: 100%
+    }
+    .billedcontain {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 10px; 
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nav {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    }
+    .billed1 {
+        order: 1; 
+    }
+
+}
