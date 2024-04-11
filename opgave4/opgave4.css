@@ -1,0 +1,77 @@
+.minslide{
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 10px; 
+    color: white; 
+}
+
+.mintxt{
+    color: grey;
+    font-size: small;
+}
+
+.starfun{
+    background-image: url('/opgave4/science-fiction/images/stjerne.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.mitlogo{
+    color: white;
+    font-size: small;
+}
+.mitmidt{
+    color: white;
+    font-size: large;
+}
+
+.navting{
+    color: white;
+}
+.rounded-container {
+    background-color: rgba(128, 128, 128, 0.3); 
+    border-radius: 15px; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+    margin-top: 15px;
+}
+
+body {
+    background-image: url('/opgave4/science-fiction/images/stjerne.jpg'); 
+    background-size: cover; 
+    background-repeat: repeat; 
+}
+.broedtxt{
+    padding: 15px;
+    margin: 40px;
+}
+.broedp{
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+.rounded-container2{
+    background-color: black; 
+    border-radius: 15px; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+}
+
+.minfootcontainer{
+    background-color: black;
+}
+
+.movie-title{
+    font-size: 24px;
+}
+
+.hover-effect {
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); /* Scale up the image by 10% */
+}
+
+
+
